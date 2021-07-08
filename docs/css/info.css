@@ -1,0 +1,180 @@
+body, html {
+  color: #402717;
+  font-size: 0.9rem;
+  background-color: #fff;
+}
+
+body, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+header .title {
+  font-size: 50px;
+  margin: 12px 30px;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: rgb(214, 194, 153);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgb(25, 50, 120);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #193278;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #d6c299;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+}
+
+/*-------------------------------------------
+img_unit
+-------------------------------------------*/
+#img_unit {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input1[type=text]{
+width:200px;
+height:50px;
+}
+
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media only screen and (max-width:700px) {
+  .slide {
+    visibility: hidden;
+  }
+
+  .smartBack {
+    visibility: visible;
+  }
+
+  header .concept1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 3vh;
+    writing-mode: vertical-rl;
+    margin: 20vh 20vw;
+  }
+
+  header .concept2 {
+    position: absolute;
+    z-index: 2;
+    font-size: 5vw;
+    margin: 80vh 15vw;
+  }
+
+  .section-title {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 15vh;
+    margin-left: 30px;
+    margin-bottom: 5vh;
+    border-bottom: hidden;
+  }
+}
