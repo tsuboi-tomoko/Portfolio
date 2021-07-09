@@ -17,21 +17,38 @@ ul {
   padding: 0;
 }
 
-
-.section-title {
+.section-title{
   display: inline-block;
   font-size: 2rem;
   margin-top: 15vh;
-  margin-left: 30px;
-  margin-bottom: 5vh;
+  margin-left: 67px;
+  margin-bottom: 3vh;
   border-bottom: solid 1px #ffffff;
+}
+.h4,h4{
+  font-size: 2.3rem!important;
+  margin-top: 15vh!important;
+  margin-left: 72px!important;
+  margin-bottom: 3vh!important;
+}
+.h2, h2{
+  font-size: 2.5rem!important;
+  margin-top: 15vh!important;
+  margin-left: 30px!important;
+  margin-bottom: 5vh!important;
+}
+
+.h6, h6{
+  font-size: 17px!important;
+  margin-left: 35px!important;
+  margin-bottom: 5vh!important;
 }
 
 .content-icon{
 	max-width: 100px;
 	max-height: 100px;
 	padding: 0;
-	margin: 0 5px 0 5px;
+	margin: 0 3px 0px 20px;
   text-align: center;
 }
 
@@ -60,7 +77,7 @@ main {
   height: 100vh;
   margin: auto;
   /* サンプルは中央寄せの背景：白 */
-  background: rgb(246, 239, 219);
+  background: #fff;
 }
 
 /*=== 画像の設定 ======================================= */
@@ -177,7 +194,7 @@ header .concept2 {
 .hamburger.active span:nth-child(1) {
   top: 16px;
   left: 6px;
-  background: #fff;
+  background: rgb(214, 194, 153);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -186,7 +203,7 @@ header .concept2 {
 .hamburger.active span:nth-child(2),
 .hamburger.active span:nth-child(3) {
   top: 16px;
-  background: #fff;
+  background:  rgb(214, 194, 153);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -199,7 +216,7 @@ nav.globalMenuSp {
   top: 0;
   left: 0;
   color: #fff;
-  background: rgb(246, 239, 219);
+  background: #fff;
   text-align: center;
   width: 100%;
   opacity: 0;
@@ -273,6 +290,8 @@ About
 .row p {
   position: relative;
   margin-top: 40px;
+  margin: 40px 0px 0px 16px;
+  font-size: 15px;
 }
 
 .profile-text{
@@ -417,7 +436,7 @@ SP
     display: inline-block;
     font-size: 1.5rem;
     margin-top: 15vh;
-    margin-left: 30px;
+    margin-left: 72px;
     margin-bottom: 5vh;
     border-bottom: hidden;
   }
